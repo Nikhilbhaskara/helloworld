@@ -1,5 +1,5 @@
 # Start with a base image containing Java runtime
-FROM OPENJDK:8      
+FROM openjdk:8      
 
 # Add Maintainer Info
 MAINTAINER = "Nikhil"
