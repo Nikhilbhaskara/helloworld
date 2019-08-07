@@ -30,7 +30,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: nikhilbhaskara
+    repository: nikhilbhaskara/helloworld
     tags: latest
 
 
