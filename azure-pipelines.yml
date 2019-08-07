@@ -30,7 +30,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: spring-demo
+    repository: nikhilbhaskara
     tags: latest
 
 
