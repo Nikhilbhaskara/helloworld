@@ -10,16 +10,16 @@ VOLUME /tmp
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
 
-CMD pwd
+
 
 # The application's jar file
-# ARG JAR_FILE=target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
+ ARG JAR_FILE=/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
- # ADD /home/vsts/work/1/s/target/spring-boot-hello-world-example-0.0.1-SNAPSHOT-spring-boot.jar spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
+  ADD ${JAR_FILE} spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
 
 # COPY /home/vsts/work/1/s/target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar app.jar
 
 
 # Run the jar file 
-# ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
