@@ -11,12 +11,12 @@ VOLUME /tmp
 EXPOSE 8080
 
 # The application's jar file
-#ARG JAR_FILE=target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
+# ARG JAR_FILE=target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
- ADD /home/vsts/work/1/s/target/spring-boot-hello-world-example-0.0.1-SNAPSHOT-spring-boot.jar spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
+ # ADD /home/vsts/work/1/s/target/spring-boot-hello-world-example-0.0.1-SNAPSHOT-spring-boot.jar spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
 
-#COPY /target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar app.jar
+COPY /target/spring-boot-hello-world-example-0.0.1-SNAPSHOT-spring-boot.jar app.jar
 
 
 # Run the jar file 
