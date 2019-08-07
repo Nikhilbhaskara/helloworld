@@ -10,7 +10,7 @@ VOLUME /tmp
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
 
-CMD echo "hello-world"
+CMD pwd
 
 # The application's jar file
 # ARG JAR_FILE=target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
